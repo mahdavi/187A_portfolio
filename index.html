@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -15,22 +16,61 @@
     <link rel="stylesheet" href="stylesheets/lib/bootstrap.css" >
     <link rel="stylesheet" href="stylesheets/lib/jquery.fancybox.css" >
 
-
     <!-- Your Stylesheets -->
     <link rel="stylesheet" href="stylesheets/main.css" >
+    <link rel="stylesheet" href="stylesheets/nivo-slider.css" type="text/css" media="screen" />
 
+	<!-- Nivo Stylesheets -->
+	<link rel="stylesheet" href="stylesheets/themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="stylesheets/themes/pascal/pascal.css" type="text/css" media="screen" />
+	
     <!-- Base Javascripts -->
     <script src="javascripts/lib/base.js"></script>
-
+    
+		
     <!-- Fancybox Lightbox http://fancyapps.com/fancybox/#examples -->
     <script src="javascripts/lib/jquery.fancybox.js"></script>
-
+	
 
     <!-- Your Javascripts -->
     <script src="javascripts/main.js"></script>
-     <script src="javascripts/lib/bootstrap-buttons.js"></script>
-
-  </head>
+    <script src="javascripts/lib/bootstrap-buttons.js"></script>
+    <script src="javascripts/lib/jquery-1.4.3.min.js" type="text/javascript"></script>
+    <script src="javascripts/lib/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+     
+		<script type="text/javascript">
+		$(window).load(function() {
+		    $('#slider').nivoSlider({
+		        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+		        slices: 15, // For slice animations
+		        boxCols: 8, // For box animations
+		        boxRows: 4, // For box animations
+		        animSpeed: 500, // Slide transition speed
+		        pauseTime: 3000, // How long each slide will show
+		        startSlide: 0, // Set starting Slide (0 index)
+		        directionNav: true, // Next & Prev navigation
+		        directionNavHide: true, // Only show on hover
+		        controlNav: true, // 1,2,3... navigation
+		        controlNavThumbs: true, // Use thumbnails for Control Nav
+		        controlNavThumbsFromRel: true, // Use image rel for thumbs
+		        controlNavThumbsSearch: '.jpg', // Replace this with...
+		        controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
+		        keyboardNav: true, // Use left & right arrows
+		        pauseOnHover: true, // Stop animation while hovering
+		        manualAdvance: false, // Force manual transitions
+		        captionOpacity: 0.8, // Universal caption opacity
+		        prevText: 'Prev', // Prev directionNav text
+		        nextText: 'Next', // Next directionNav text
+		        randomStart: false, // Start on a random slide
+		        beforeChange: function(){}, // Triggers before a slide transition
+		        afterChange: function(){}, // Triggers after a slide transition
+		        slideshowEnd: function(){}, // Triggers after all slides have been shown
+		        lastSlide: function(){}, // Triggers when last slide is shown
+		        afterLoad: function(){} // Triggers when slider has loaded
+		    });
+		});
+	</script>
+	  </head>
 
   <section id="navigation">
   <div class="topbar-wrapper" style="z-index: 5;">
@@ -69,21 +109,33 @@
 
 
         <div class="span16">
-        <div class="alert-message danger fade in" data-alert="alert">
+        <div class="alert-message warning fade in" data-alert="alert">
         <a class="close" href="#">x</a>
-        <p><strong>Stranger Danger!</strong> We're still under construction.</p>
-        </div>          
-          
-          <div class="alert-message block-message info fade in">
-          
-          <p><strong>Holy guacamole!</strong> Best check yourself, you're not looking too good.</p>
-          <p>Text Test</p>
-          </div>
-            <div class="row show-grid" title="Default three column layout">
-            <div class="span-one-third">
-              <a class="fancybox" href="images/187.jpg" data-fancybox-group="gallery" title="COGS 187"><img src="images/187.jpg" alt="COGS187" /></a>
+        <p><strong> Yo!</strong> We're still under construction.</p>
+        </div>   
+        
+           
             
-            </div>
+        <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+		    <img src="images/banner/slide1.png" alt="" />
+		    <a href="projects.html#1"><img src="images/banner/slide2.png" alt="" title="#htmlcaption1" /></a>
+		    <a href="projects.html#2"><img src="images/banner/slide3.png" alt="" title="#htmlcaption2" /></a>
+		    <a href="projects.html#3"><img src="images/banner/slide4.png" alt="" title="#htmlcaption3" /></a>
+		</div>
+		
+		<div id="htmlcaption1" class="nivo-html-caption">
+		    <p class="center">Check out the DBLCAM project <a href="projects/">here</p>
+		</div>
+		<div id="htmlcaption2" class="nivo-html-caption">
+		    <p class="center">Check out the MarcFam project <a href="projects/#">here</p>
+		</div>
+		<div id="htmlcaption3" class="nivo-html-caption">
+		    <p class="center">Check out the VSFS project <a href="#">here</p>
+		</div>
+		</div>
+		</div>         
+            
             
             <div class="span-one-third">
             <a class="fancybox" href="images/187.jpg" data-fancybox-group="gallery" title="COGS 187"><img src="images/187.jpg" alt="COGS187" /></a>

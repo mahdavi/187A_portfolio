@@ -1,9 +1,34 @@
 .footer {
   height:40px;
-  position:fixed;
+  position:static;
   bottom:0;
   left:0;
   right:0;
   z-index:10000;
   overflow:visible;
 }
+
+body{
+	
+	background-image: url("http://subtlepatterns.com/patterns/ice_age.png");
+}
+
+.nivoSlider {
+    position:relative;
+    width:618px; /* Change this to your images width */
+    height:246px; /* Change this to your images height */
+    background:url() no-repeat 50% 50%;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+
+
+p.center { text-align: center }
