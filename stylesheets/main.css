@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'JollyMedium';
+    src: url('font/jolly-webfont.eot');
+    src: url('font/jolly-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/jolly-webfont.woff') format('woff'),
+         url('font/jolly-webfont.ttf') format('truetype'),
+         url('font/jolly-webfont.svg#JollyMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+	@font-face {
+	    font-family: 'nevisBold';
+	    src: url('font/nevis_3-webfont.eot');
+	    src: url('font/nevis_3-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('font/nevis_3-webfont.woff') format('woff'),
+	         url('font/nevis_3-webfont.ttf') format('truetype'),
+	         url('font/nevis_3-webfont.svg#nevisBold') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+}
+
 .footer {
   height:40px;
   position: static;
@@ -62,4 +83,12 @@ border-radius: 15px;
 
 .pusher{
 	max-height: 970px;
+}
+
+#navigation div.topbar-wrapper div.topbar div.topbar-inner div.container h3 a {
+	font-family: "nevisBold";
+}
+
+#navigation div.topbar-wrapper div.topbar div.topbar-inner {
+	font-family: "nevisBold";
 }
