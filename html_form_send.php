@@ -140,9 +140,8 @@ $headers = 'From: '.$email_from."\r\n".
       
       <div class="row">
 
-<center
-<h2>Thank you for contacting us.</h2>
-</center>
+
+<h2 class="center">Thank you for contacting us.</h2>
       </div> <!-- end row -->
 
     </div> <!-- end container -->

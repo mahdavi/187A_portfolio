@@ -29,6 +29,8 @@
     <!-- Your Javascripts -->
     <script src="javascripts/main.js"></script>
      <script src="javascripts/lib/bootstrap-buttons.js"></script>
+     <script src="javascripts/lib/bootstrap-twipsy.js"></script>
+     <script src="javascripts/lib/bootstrap-popover.js"></script>
 
   </head>
   
@@ -69,12 +71,28 @@
 
 
 	<div class="span-8">
-            <img src="http://a8.sphotos.ak.fbcdn.net/hphotos-ak-ash4/253907_10150206622554893_562389892_6841414_1642216_n.jpg"
-            alt="facebook photo"/>
+            <img src="images/full.png"/>
             </div>
 	<div class="span-8">
-		<p> This is me </p><br>
-		<p>Yea!</p>
+		<h4> This is me </h4><br>
+		<p>My name is Neema. I'm a student of<br> Cognitive Studies: Human - Computer Interaction <br>
+		and International Studies: Linguistics at<br> the University of California, San Diego.</p>
+		<br>
+		<p>I haven't put my résumé up yet, but it will be available <br> for download eventually.
+		<div class="center">
+		 <a class="btn danger" rel="twipsy" data-original-title="Not available yet">PDF</a> <a class="btn primary" rel="twipsy" data-original-title="Not available yet">Word</a>
+		 </div>
+		 <script>
+		             $(function () {
+		               $("a[rel=twipsy]").twipsy({
+		                 live: true
+		               })
+		             })
+          </script>
+		           
+		 
+		 <br>I currently work for a small startup in San Diego,<br>but I'm always looking for
+		 opportunities</p>
 	</div>
 
     </div> <!-- end container -->
